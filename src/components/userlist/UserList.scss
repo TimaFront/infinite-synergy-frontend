@@ -1,0 +1,97 @@
+.user-list-container {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.user-list {
+  flex: 1;
+  overflow-y: auto;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.user-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+.user-card:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.user-card.selected {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+  box-shadow: 0 2px 5px rgba(24,144,255,0.2);
+}
+
+.user-card h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.user-id {
+  font-size: 12px;
+  color: #888;
+  margin: 5px 0 0 0;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
+
+.pagination-button {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #e6f7ff;
+  border-color: #1890ff;
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  color: #666;
+  font-size: 14px;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}

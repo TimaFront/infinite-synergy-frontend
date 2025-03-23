@@ -47,8 +47,7 @@ const UserList: React.FC = () => {
                             className={`user-card ${selectedUser?.id === user.id ? 'selected' : ''}`}
                             onClick={() => handleUserClick(user)}
                         >
-                            <h3>Пользователь #{user.id + 1}</h3>
-                            <p className="user-id">ID: {user.id}</p>
+                            <h3>{ user.name.trim() === '' ? "Пользователь" + " " + user.id : user.name + " " + user.surname }</h3>
                         </div>
                     ))
                 )}
